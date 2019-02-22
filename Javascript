@@ -1,1 +1,88 @@
+•	Introduction to JavaScript.
+•	Js is case-sensitive.
+•	The ‘console’ keyword refers to an object, a collection of data and actions, that we can use in our code.
+•	Console.log() print whatever is written between parenthesis.
+•	// used to make single line comments
+•	/*………………..*/ multi line comment
+•	Data types: 
+o	Number
+o	String- defined in single quotes ‘string here’
+o	Boolean- true, false
+o	null
+o	undefined- null and undefined are not same
+o	symbol
+o	object
+•	operators : Sum(+), substract(-), multiply(*), divide(/), Remainder(%)
+•	string concatenation using + like :- ‘hello’+ ‘world’
+•	.length is a property to calculate the length of a string like:- ‘hello’.length
+•	Function in js are ended with ()
+•	‘string’.toUpperCase() returns ‘STRING’
+•	‘string’.trim() remove ending white spaces.
+•	‘string’.startsWith(‘s’) returns true.
+•	Math.random() generates random number between 0 and 1
+•	In order to get number btwn 0 and 50 multiply the random by 50 like:- Math.random()*50
+•	Math.floor() and Math.ceil()
+•	Number.isInteger(2017)
+•	var, let and const
+•	const value can’t be change throws TypeError
+•	var name = ‘ash’;  console.log(`string ${name}`); //template literal wrapped by backticks and ${} is placeholder for variables
+•	typeof operator checks datatype of object :- var a=5; typeOf a; //typeof not camelcase
+•	comparison operator :- <,>,<=,>=,===,!==
+•	logical operator :- && , ||, !
+•	condition ? first expression : second expression     -> if condition is true first expression is executed else second
+•	function functionname(){}
+•	function fname(param = ‘default value’){} :- if nothing is passed in function call default value is used
+•	by default every function returns ‘undefined’
+•	function expression:- const fun = function(param1,param2){return param1+param2;}
+•	call function:- fun(param1,param2)
+•	arrow function:- using fat arrow notation ()=>
+•	const fun_name = (args) => {statements}
+•	if num of arguments is only one () can be removed
+•	if num of statements in {} is one than return statement can be removed
+•	Scope Pollution :- When we define too many global variables in our program
+•	Array difining :- const/let arr_name = [items]
+•	array.push(items) to push items in array at the end
+•	array.pop() pops out last element from array
+•	array.shift() removes element from the start of array
+•	array.unshift(items) pushes items to the front of array
+•	array.indexOf(item) returns the index of item in array if present
+•	for(initialization starts; stopping condition; iteration statement){}
+•	const a = function_with_a_very_long_name;
+•	a()
+•	name of a can be retrieved as a.name
+•	iterators in js: foreach(), map(), filter()
+•	forEach() is used to execute same code on every element but does not change array returns undefined.
+•	map() returns a new array with updated elements and executes same code on every element
+•	filter() return new array after checking a specific condition 
+•	array.findIndex(num=>{return condition}) returns the index of first element which evaluates true, otherwise, return -1
+•	array.reduce() returns a single element after iterating through whole array
+•	array.some()
+•	array.every()
+•	OBJECTS:
+•	objects in javascript are represented in key value pair just like a dictionary in python
+•	const object_name = { key1:value1,key2:value2} this value can be anything like a value or maybe a function
+•	these keys are properties of object if are simple then may be referred as object_name.any_propoerty or have some space like ‘property name’ then may be accessed as object_name[‘property name’]
+•	even though we create object with const, we can’t reassign the object but can make changes in object i.e object is always mutable like add or change properties.
+•	If the object property is a function we access it like object_name.function_name()
 
+•	ADVANCE OBJECTS:
+•	Javascript does not have access modifiers, so java developers use their own convention to let other developers know how to interect with that property
+•	_property is used to tell that this property shoulf=dnot be altered.
+•	Getter method on object :- const obj_name{ get getter_name(){}}
+•	Setter mothed on object :- const obj_name{ set settername(){} }
+•	Factory methods:- methods to create a large number of objects just like real world objects.
+•	Destructured assignment:- we usually get obj property as-> const val=obj.property_name, but this allows to get property as const {property_name} = object
+•	CLASS:
+•	Class className{ constructor(args){} }
+•	A method in class in javascript does not have any const or let keyword.
+•	class chile extends Parent{}
+•	in a constructor u should always call ‘super’ before using ‘this’, otherwise js will throw reference error.
+•	Babel- is a library used to convert new ES6 into ES5.
+•	In ES5:
+•	Module exporting :- const obj = {key:value}; module.exports = obj;
+•	After exporting we can import the same module by saying require(‘filedirectory’) like:- const obj = require(‘./main.js’)
+•	In ES6:
+•	export default module_name;
+•	import module_name from ‘file directory’; // withour using .js file extension
+•	exporting data :- export {data1,data2,data3};
+•	importing data :- import {data1,data2} from ‘directory name’
