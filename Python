@@ -1,1 +1,157 @@
+Python
+1)	Python is a object oriented as well as procedural language.
+2)	Regular methods automatically pass the instance as the first argument and we call that self.
+3)	Class methods automatically pass the class as the first argument and we call that cls. @classmethod is used as a decorator on a function to make it a class method and its first argument is cls, but when calling that function cls is not passed, same as self. A class method is a method which is bound to the class and not the object of the class. They have the access to the state of the class not the object of class. It also return class object like a constructor.
+4)	Static methods don’t pass anything automatically. This is also bound to the class and not to the object of class but can’t access or modify class state.
+5)	__repr__ is used to compute the “official” string representation of an object and __str__ is used to compute the “informal” string representation of an object. The print statement and str() built-in function uses __str__ to display the string representation of the object while the repr() built-in function uses __repr__ to display the object.
+6)	 str() is used for creating output for end user while repr() is mainly used for debugging and development. repr’s goal is to be unambiguous and str’s is to be readable. For example, if we suspect a float has a small rounding error, repr will show us while str may not.
+7)	 __init__() is not a constructor. Many native Python programmers get confused with it since __init__() gets called when we create an object. A closer inspection will reveal that the first parameter in __init__() is the object itself (object already exists). The function __init__() is called immediately after the object is created and is used to initialize it.
+8)	Self should be used when defining an instance method or referencing a class or instance attribute from inside an instance method.
+9)	Python supports multiple programming paradigms, like object-oriented, imperative and functional programming or procedural.
+10)	Every if statement has no (brackets), ending with: instead of {}.
+11)	"and" and "or" are instead of "&&" and "||" in condition statements.
+12)	print str  == Prints complete string.
+13)	print str[0] == Prints first char of the string.
+14)	print str[2:5] == Prints characters starting from 3rd to 5th.
+15)	print str[2:] == Prints string starting from 3rd character.
+16)	print str * 2 == Prints string two times.
+17)	print str + "TEST" == Prints concatenated string.
+18)	integer division a//b
+19)	float division   a/b
+20)	Python does not do concatenation implicitly we have to convert everything into string by writing str(here) to convert into string.
+21)	String in python is declared this way:- str stringname = "Abhishek".
+22)	len(string here) this is used to find length of a string in python.
+23)	Two string methods are used to find character at a particular index in python 1) find() 2) index() .If found both methods return index and if not found find() returns -1 and index() returns ValueError.
+24)	To find the character at any position in a string then use str[index] , for example :- s="ASDEFG" then s[1]=S.
+25)	print(x, end=" ")  # Appends a space instead of a newline.
+26)	split() function returns a list.
+27)	dict = {} is initialisation of a dictionary.
+28)	'**' is the operator for 'power of' or '^' where as '*' works normally.
+29)	'//' is used for integer division and '/' is used for float division.
+30)	NumPy is a library for the Python, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+31)	To make a variable global, just mention 'global' in variable declaration
+32)	Partial Function: It allow us to fix a certain number of arguments of a function and generate a new function. And the line 'from functools import partial' must be added. e.g.
+33)	Unpacking: Let a function f1 needs 4 arguments, and when it is called it must be provided with its arguments. So we can provide it a list or dictionary, but here is the trick, the list and dictionary
+34)	Containers provide a way to access contained objects and iterate over them.
+35)	(a,b,c,d) so when called f1(*list)
+36)	Packing: Similarly when we don't know the number of arguments to be passed we provide '*' with arguments.
+37)	Print() in python is ended by a default parameter " end='\n' " in it. But the programmer can tweak this with its own use.
+38)	Set does not contain repeated values, so if anytime we need to remove duplicate items just convert it into a Set. But sorting does not account for -ve values. Sort does not know - .So it sort all positive values and then put negative values in their original order.
+39)	To round off a number two decimal digits write = '%.2f'%number.
+40)	Ternary Operators also known as conditional expressions are operators that evaluate something based on a condition being true or false.
+41)	Chaining operators like 'a op1 b op2 c' is equal to 'a op1 b and b op2 c' where op1 and 2 are - '<', '>', '==', '!=', '>=' etc.
+42)	Pass Statement is used to write empty loops. Pass is also used for empty control statement, function and classes.
+43)	Looping extensions: Two iterators for a single looping construct.
+44)	Zip function: This function is helpful to combine similar type iterators (list-list or dict-dict etc) data items at ith position. It uses shortest length of these input iterators. Other items of larger length iterators are skipped. In case of empty iterators it returns No output.
+45)	sorted() is used to print the container is sorted order. It doesn’t sort the container, but just prints the container in sorted order for 1 instance. Use of set() can be combined to remove duplicate occurrences.
+46)	enumerate() is used to loop through the containers printing the index number along with the value present in that particular index.
+47)	iteritems() is used to loop through the dictionary printing the dictionary key-value pair sequentially.
+48)	items() performs the similar task on dictionary as iteritems() but have certain disadvantages when compared with iteritems() which are, 1) Calling it on large dictionaries consumes quite a lot of time. 2) It takes a lot of memory. Sometimes takes double the memory when called on dictionary.
+49)	Number of local variables in a function is ->  functionname.__code__.co_nlocals
+50)	
+ 
+COUNTERS
+1)	Counter is a subclass of dict. It is an unordered collection where elements and their respective count are stored as dictionary and considered only as a single argument, so we have to unpack it, so to unpack a list use '*' and for a dictionary use '**'. eg. f1(a) Counter does not raise the KeyValue error (if key is not present) instead the value’s count is shown as 0.
+2)	Containers provide a way to access contained objects and iterate over them.
+3)	Counter is a subclass of dict. It is a unordered collection where elements and their respective count are stored as dictionary.
+4)	Counter does not raise the KeyValue error (if key is not present) instead the value’s count is shown as 0.
+5)	counter.elements() return the iterator of all elements of the counter.
+6)	counter.most_common(int n) returns all the n most common value pair in the counter.
+7)	counter.update(data) updates the counter.
+ 
+Function Decorator
+A decorator takes in a function as argument, adds some functionality and returns it.
+1)	 In python, we can define a function in another function.
+2)	 In python, we can pass a function as a parameter to another function.
+3)	A function can also return another function.
+4)	
+
+ 
+Yield
+1)	 The yield statement suspends function’s execution and sends a value back to caller, but retains enough state to enable function to resume where it is left off. When resumed, the function continues execution immediately after the last yield run. This allows its code to produce a series of values over time, rather them computing them at once and sending them back like a list.
+2)	Return sends a specified value back to its caller whereas Yield can produce a sequence of values. We should use yield when we want to iterate over a sequence, but don’t want to store the entire sequence in memory.
+3)	Yield are used in Python generators. A generator function is defined like a normal function, but whenever it needs to generate a value, it does so with the yield keyword rather than return. If the body of a def contains yield, the function automatically becomes a generator function.
+ 
+Precision Handling
+Handle precision of floating point numbers in several ways using different functions and most of the functions are under math module.
+1)	 trunc() - eliminate all decimal part of the floating point number and return the integer without decimal
+2)	 ceil() – print least integer greater than the given number
+3)	 floor() – print greatest integer smaller than given number
+4)	 Using % - ‘%.2f’%a prints two digits after decimal
+5)	 Using format() – “{0: .2f}”.format(a) same as above
+6)	 Round(a,n) – round(a,2) same as above
+# The first three functions should be used as used as:-
+math.trunc(num)
+math.ceil(num)
+math.floor(num)
+ 
+Closures
+1)	 A closure is a function object that remembers values in enclosing scopes even if they are not present in memory.
+2)	It is a record that stores a function together with an environment (all local variables) with the value or reference to which the name was bound when the closure was created.
+3)	Unlike a plain function, closure allows the function to access those captures variables through the closure’s copies of their values or references, even when the function is invoked outside their scope.
+Example: 
+def outerFunction(text):
+    text= text
+    def innerFunction():
+        print(text)
+    return innerFunction
+if __name__ == '__main__':
+    fun = outerFunction('Hey!')
+    fun()
+output: Hey!
+	// Here the innerFunction has its scope only inside the outerFunction but with the use of closure we can extend its scope to invoke outside its scope.
+Use of Closure:
+1)	 As closures are used as callback functions, they provide some sort of data hiding. This helps us to reduce the use of global variables.
+2)	 When we have few functions in our code, closures prove to be efficient way. But if we need to have many functions, then go for class (OOP).
+ 
+First Class Functions
+A programming language is said to support first class functions if it treats functions as first-class objects, and obviously python supports it.
+Properties:
+1)	A function is an instance of the object type.
+2)	You can store the function in a variable.
+3)	You can pass the function as a parameter to another function.
+4)	You can return the function from a function.
+5)	You can return them in data structures such as hash tables, lists etc.
+
+ 
+SET:
+A Set is an unordered collection data type that is iterable, mutable, and has no duplicate elements. Python’s set class represents the mathematical notion of a set. The major advantage of using a set, as opposed to a list, is that it has a highly optimized method for checking whether a specific element is contained in the set. This is based on a data structure known as a Hash table.
+Frozen sets are immutable objects that only support methods and operators that produce a result without a?ecting the frozen set or sets to which they are applied.
+Methods:
+For here we take 2 sets set1 and set2
+1.	 set1.add(item)
+2.	 Set = set1.union(set2)
+3.	 Set = set1.intersection(set2)
+4.	 Set = set1.difference(set2)
+5.	 Set1.clear() // clears whole set.
+ 
+Timeit:
+A python class used to determine the execution time of your python code snippets.
+import timeit
+def linear_search(mylist, find):
+    for x in mylist:
+        if x == find:
+            return True
+    return False
+def linear_time():
+    SETUP_CODE = '''from __main__ import linear_search
+from random import randint'''
+    TEST_CODE = '''mylist = [x for x in range(10000)]
+find = randint(0, len(mylist))
+linear_search(mylist, find)'''
+    times = timeit.repeat(setup=SETUP_CODE,
+                          stmt=TEST_CODE,
+                          repeat=3,
+                          number=100000)
+    # printing minimum exec. time
+    print(times)
+if __name__ == '__main__':
+    linear_time()
+ 
+String Template
+In String module, Template Class allows us to create simplified syntax for output specification. The format uses placeholder names formed by $ with valid Python identifiers (alphanumeric characters and underscores). Surrounding the placeholder with braces allows it to be followed by more alphanumeric letters with no intervening spaces. Writing $$ creates a single escaped $.
+It is not compulsory to use $ as the keyword, we can use any symbol as a delimiter by just defining:
+delimiter = ‘Symbol’
+To attach a string to the end of placeholder we need to specify the placeholder in {} eg :- x in ${pp}er 		output:- x in veer
+If we need to use the delimiter in your string result then use it twice :- money=$$x output :- $1254
 
