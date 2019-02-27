@@ -1,1 +1,23 @@
-
+DRY-dont repeat youself
+Started in 2003, released in 2005 after a guitarist Django Reinhardt.
+Advantages: - Object Relational Mapping (ORM) Support; Multilingual Support; Built-in Framework support like Ajax, RSS etc; GUI.
+django-admin gives a list of available commands in cmd.
+django-admin startproject project_name in cmd creates a new project.
+django-admin startapp app_name in cmd create a new app in project
+python manage.py runserver runs the server on default port 8000
+A view is always meant to return a HttpResponse or an Exception.
+The render function returns a HttpResponse in background.
+The render method contains context as a dictionary only, it is optional argument, if it is not passed then by default it is empty, or if u want to pass some data, a dictionary is passed.
+ 
+Steps:-
+1.	 Django-admin startproject projectname
+2.	 Move inside projectname directory
+3.	 Django-admin startapp appname
+4.	 Python manage.py runserver
+5.	 Add include to urls.py
+6.	 Create urls.py in app
+7.	 Make all the urls
+8.	 Add the app to setting file
+9.	 Render fnx returns request,webpage,data(ifneeded)kdf
+10.	To create project in specific directory ‘Django-admin startproject projectname .’
+11.	
