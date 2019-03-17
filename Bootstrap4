@@ -2,4 +2,4 @@ Add bootstrap link in the head of html
 Many of our components require the use of JavaScript to function. Specifically, they require jQuery,Popper.js and our own JavaScript plugins. Place the following <script>s near the end of your pages, right before the closing </body> tag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins
 Bootstrap is developed for mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <head>. <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 Bootstrap grid : containers contain rows which contains columns.(columns in rows in containers.)
-class container gets center aligned and have 
+class container gets center aligned and have.
